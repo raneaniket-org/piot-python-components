@@ -3,3 +3,7 @@
 **/cred
 **/venv
 .venv
+*.DS_Store
+.idea/
+*.eml
+*.iml
