@@ -8,21 +8,21 @@
 #
 
 import logging
-import psutil
 
-from programmingtheiot.cda.system.BaseSystemUtilTask import BaseSystemUtilTask
-from programmingtheiot.common import ConfigConst
+from programmingtheiot.data.SensorData import SensorData
 
-
-class SystemMemUtilTask(BaseSystemUtilTask):
+class TemperatureI2cSensorAdapterTask():
 	"""
 	Shell representation of class for student implementation.
 	
 	"""
 
 	def __init__(self):
-		super(SystemMemUtilTask, self).__init__(name = ConfigConst.MEM_UTIL_NAME, typeID = ConfigConst.MEM_UTIL_TYPE)
-
+		pass
+	
+	def generateTelemetry(self) -> SensorData:
+		pass
+	
 	def getTelemetryValue(self) -> float:
-		return psutil.virtual_memory().percent
-		
+		pass
+	

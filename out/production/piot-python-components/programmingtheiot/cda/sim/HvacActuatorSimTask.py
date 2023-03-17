@@ -8,21 +8,17 @@
 #
 
 import logging
-import psutil
+import random
 
-from programmingtheiot.cda.system.BaseSystemUtilTask import BaseSystemUtilTask
-from programmingtheiot.common import ConfigConst
+from programmingtheiot.data.ActuatorData import ActuatorData
+from programmingtheiot.cda.sim.BaseActuatorSimTask import BaseActuatorSimTask
 
-
-class SystemMemUtilTask(BaseSystemUtilTask):
+class HvacActuatorSimTask(BaseActuatorSimTask):
 	"""
 	Shell representation of class for student implementation.
 	
 	"""
 
 	def __init__(self):
-		super(SystemMemUtilTask, self).__init__(name = ConfigConst.MEM_UTIL_NAME, typeID = ConfigConst.MEM_UTIL_TYPE)
-
-	def getTelemetryValue(self) -> float:
-		return psutil.virtual_memory().percent
+		pass
 		

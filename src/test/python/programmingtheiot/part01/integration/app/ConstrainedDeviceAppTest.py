@@ -12,6 +12,7 @@ import unittest
 
 from programmingtheiot.cda.app.ConstrainedDeviceApp import ConstrainedDeviceApp
 
+
 class ConstrainedDeviceAppTest(unittest.TestCase):
 	"""
 	This test case class contains very basic unit tests for
